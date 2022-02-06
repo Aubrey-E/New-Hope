@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Adoption Form - New Hope Rescue Center</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="New Hope Rescue Center is an animal rescue that adopts out rescue dogs, cats,
+and other indoor and outdoor pets to the Valparaiso, Indiana area.">
+<link href="newhope.css" rel="stylesheet">
+<link rel="icon" href="favicon.png" type="image/ico">
+</head>
+<body>
+<div id="wrapper">
+<header>
+<h1>New Hope Rescue Center</h1>
+</header>
+<nav id="back">
+<ul>
+<li><a href="index.html">&lt;&lt; Return to Home Page</a></li>
+</ul>
+</nav>
+<main id="newsletter">
+<h1 id="newsheader">Adoption Form</h1>
+<p>Enter your information below and submit the form to begin the process of
+adopting your new pet. All fields are required. We will contact you by phone
+or e-mail to create an adoption appointment.</p>
+<form method="post" action="https://bobbi.ivytech.edu/~aeriks2/SDEV153/FP3/newhope3/formmail.php">
+<input type="hidden" name="recipients" value="dramaticfanatic21@gmail.com" />
+<input type="hidden" name="subject" value="FormMail Response" />
+<label for="Name">Your Name:</label>
+<input type="text" name="Name" id="Name" required="required">
+<label for="PetName">Name of pet you wish to adopt:</label>
+<input type="text" name="PetName" id="PetName" required="required">
+<label for="Number">Your Phone Number:</label>
+<input type="tel" name="Number" id="Number" required="required">
+<label for="Email">Your E-mail:</label>
+<input type="email" name="Email" id="Email" required="required">
+<label for="PetTextArea">Why do you wish to adopt this pet?:</label>
+<textarea name="PetTextArea" id="PetTextArea" rows="5" cols="50" required="required"></textarea>
+<input id="submit" type="image" src="submit.gif" alt="Submit Button">
+</form>
+</main>
+</div>
+</body>
+</html>
